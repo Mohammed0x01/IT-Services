@@ -2,7 +2,9 @@ package org.example;
 
 import java.sql.*;
 public class DatabaseConnection {
-    public static Connection conn;
+    private static Connection conn;
+
+    private DatabaseConnection(){}
 
     public static Connection getCon() throws SQLException {
         if(conn == null){
